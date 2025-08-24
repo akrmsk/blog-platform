@@ -24,10 +24,10 @@ public class Tag {
 
 
     @ManyToMany(mappedBy = "tags")
-    private List<Post> posts=new ArrayList<>();
-
-    @ManyToMany(mappedBy = "tags")
-    private Set<Post> postSet = new HashSet<>();
+    private Set<Post> posts=new HashSet<>();
+//
+//    @ManyToMany(mappedBy = "tags")
+//    private Set<Post> postSet = new HashSet<>();
 
     @Override
     public boolean equals(Object o) {
